@@ -104,9 +104,7 @@ public class ArticlesList extends ListActivity {
 						progressDialog.dismiss();
 						runOnUiThread(new Runnable() {
 							public void run() {
-
 								fillData();
-
 							}
 						});
 
