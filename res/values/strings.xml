@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GeekyRSS</string>
+    <string name="feeds_title">Feed list</string>
+    <string name="articles_title">Articles list</string>
+    <string name="feature_title">Feature list</string>
+     <string name="words_title">Feature word list</string>
+    <string name="menu_insert">Add Feed</string>
+    <string name="menu_feature">View Featured Articles</string>
+    <string name="menu_delete">Delete Feed</string>
+    <string name="menu_sync_all">Sync All</string>
+    <string name="menu_stop_service">Stop Service</string>
+      <string name="menu_feature_list">Feature word list</string>
+     <string name="menu_about">About</string> 
+     <string name="about_text">made by Erkan Shakir \n\n 2012</string> 
+    
+    <string name="menu_sync">Sync</string>
+    <string name="button_ok">Add Feed</string>
+    <string name="button_cancel">Cancel</string>  
+    <string name="url_editor">Feed URL</string>
+    <string name="content">Article details</string>
+    <string name="articles_list">Articles list</string>
+    
+   <string name="feed_list_empty">Feeds list empty</string>
+     <string name="loading_articles"> Loading articles&#8230;</string>    
+    <string name="ArticleContent1">        <![CDATA[
+           <html>
+				<head>
+					<title>Article details</title>
+					<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+				</head>
+				<body>
+					<h3>
+						<a href="
+						
+]]>
+    </string> <!-- URL -->
+    <string name="ArticleContent2">        <![CDATA[						
+						
+						"><span style="color:#0000ff;"><span style="font-size: 26px; ">
+						]]>
+    </string> <!-- TITLE -->
+    <string name="ArticleContent3">        <![CDATA[							
+						</span></span></a></h3>
+					<hr />
+					<p>
+						<font size="1"><b>
+				]]>
+    </string> <!-- FEED -->
+
+    <string name="ArticleContent4">        <![CDATA[		</b> on &nbsp; 
+          ]]>
+    </string> <!-- pubdate -->
+
+    <string name="ArticleContent5">        <![CDATA[	        
+         </font></p>	]]>
+    </string>
+    <string name="ArticleContent6">        <![CDATA[
+						<p>
+						]]>
+    </string> <!-- BODY -->
+    <string name="ArticleContent7">        <![CDATA[						
+						</p>
+				</body>
+			</html> 
+  ]]>
+    </string>
+      <string name="ArticleEmpty">
+          <![CDATA[
+           <html>
+				<head>
+					<title>Article details</title>
+				</head>
+				<body>
+					No data found!
+				</body>
+			</html>
+  ]]> 
+
+     </string>
+      <string name="Title_dialog">Enter RSS feed URL:</string>
+      <string name="word_title">Add a word to the list:</string>
+     
+</resources>

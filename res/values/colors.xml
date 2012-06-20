@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+ <resources>
+  <color name="text_color_back_white">#FFFFFF</color> 
+  <color name="text_color_black">#000000</color> 
+  <color name="text_color_red">#A50400</color> 
+  <color name="text_color_yellow">#FFD339</color> 
+  <color name="text_color_green">#109210</color> 
+  <color name="text_color_orange">#FF9F00</color> 
+  <color name="details_color">#C4C4AC</color> 
+  <color name="list_title_color">#87CEFA</color> 
+  <color name="list_title_items">#E0FFFF</color> 
+ <color name="text_color_def_article">#336699</color>
+  <color name="text_color_grey">#808080</color>
+  </resources>
