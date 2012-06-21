@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Geekyrss : Android application for following RSS feeds" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Geekyrss</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/erkobg/GeekyRSS">View on GitHub</a>
+
+          <h1 id="project_title">Geekyrss</h1>
+          <h2 id="project_tagline">Android application for following RSS feeds</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/erkobg/GeekyRSS/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/erkobg/GeekyRSS/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>GeekyRSS.</h3>
+
+<h1>Android application for following RSS feeds, with possibility to read articles in offline mode</h1>
+
+<hr><p><strong>Target API</strong> : 8 ( Android 2.2 Froyo)</p>
+
+<p><strong>Activities</strong> : 5 </p>
+
+<p><strong>Services</strong> : 1 (background job to check old articles)</p>
+
+<p><strong>Time used</strong>:
+several hours (1-2) for 7 days, just when I had the chance  </p>
+
+<h3>Description</h3>
+
+<p>When the application starts, the user is able to see a list of all the feeds that he subscribed to along with the number of read and unread news for each feed. The user is able to subscribe to a new feed by providing its URL as well as unsubscribe from existing feeds. In the context menu there is add new feed, and when "Long hold" on the specific Feed - there comes context menu with Sync and Delete option.
+Syncing of the news is done automatically when the initial screen is loaded if the application finds that there is network (Wi-Fi or Mobile data) connection - you can see progress in the progress bar in the bottom of the Feeds List activity. 
+All the feeds (title, text, URL to the real news, picture and any additional data) are stored in a database for offline reviewing. </p>
+
+<p>When the user clicks on a feed from the initial screen, all the news items that it contains are presented on a new screen in a way that the new (unread) ones can be distinguished from the old - readed ones are Strikethrough styled. A news item is considered old if it is opened. The user is also able to look at a list of featured news from all the feeds that they have subscribed to. Featured news is one that contains a key word or a sequence of words in its title or summarized text. The user is able to manipulate, i.e. add or delete, the list of key words. This is done from a dedicated screen.</p>
+
+<p>There is a background job that regularly checks if the database contains too many entries and that cleans up the oldest ones (in our case - the older than 10 days).</p>
+
+<p><strong>Permissions:</strong>
+<strong>android.permission.WRITE_EXTERNAL_STORAGE</strong> -  used for SQLite database creation</p>
+
+<p><strong>android.permission.ACCESS_NETWORK_STATE</strong> - used for checking whether there is internet connection in order to sync</p>
+
+<p><strong>android.permission.INTERNET</strong> - used to sync Feeds and Articles</p>
+
+<p><strong>Todo's:</strong></p>
+
+<ul>
+<li> handle all locking cases</li>
+<li> optimize performance</li>
+<li> stabilize overall stability of the app (still a lot of crashing)</li>
+<li>  test it more (I didn't had the time to try all possible scenarios)</li>
+<li> provide configuration option to specify time interval for deleting old articles</li>
+<li> show loading /progress when adding new feed</li>
+<li> make reading Articles possible with slide left/right (using Fragments)</li>
+<li>and so on...</li>
+</ul><p><strong>Screenshots:</strong></p>
+
+<p><img src="https://lh5.googleusercontent.com/-FiuBcO5eKHo/T-GT8k5B8NI/AAAAAAAAFWg/e8pt3W0zJlI/s800/2012-06-19+19.01.05.png" alt="1"><img src="https://lh4.googleusercontent.com/-u0Q9EwRt2t0/T-GT8n0KR8I/AAAAAAAAFWk/2KUuLtheEXs/s800/2012-06-19+19.02.07.png" alt="2"><img src="https://lh4.googleusercontent.com/-cfseTDxy9sM/T-GT8n6G9nI/AAAAAAAAFWo/vB9D7hFebtU/s800/2012-06-19+19.02.28.png" alt="3"><img src="https://lh5.googleusercontent.com/-Lopwd38THwQ/T-GT9Y7mhjI/AAAAAAAAFWw/tN1Rj6DCjhs/s800/2012-06-19+19.03.07.png" alt="4"><img src="https://lh3.googleusercontent.com/-yaUtTLid560/T-GT9VisWMI/AAAAAAAAFWs/uW1x4m5REq0/s800/2012-06-19+19.03.20.png" alt="5"><img src="https://lh3.googleusercontent.com/-PAd-6AkSsco/T-GT9w2k29I/AAAAAAAAFW0/FAOdRlCCCQM/s800/2012-06-19+19.03.55.png" alt="6"><img src="https://lh4.googleusercontent.com/-Qfr_GErCEqs/T-HPBo748LI/AAAAAAAAFXo/syLkORvyuNE/s800/2012-06-20+16.23.34.jpg" alt="7"></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Geekyrss maintained by <a href="https://github.com/erkobg">erkobg</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
